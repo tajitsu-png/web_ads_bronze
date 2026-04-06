@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ウェブ広告エキスパートBronze 問題集 | 2026年度版</title>
+  <meta name="description" content="2026年ウェブ広告エキスパートBronze認定資格試験の演習問題集。全5章・各章10問の4択問題で資格取得を目指せます。">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="app-header">
+    <div class="header-left">
+      <img src="images/logo.png" alt="一般社団法人 ウェブ広告協会" class="header-assoc-logo">
+      <div class="header-divider"></div>
+      <div class="header-title">
+        ウェブ広告エキスパートBronze 問題集
+        <span>2026年認定資格試験 演習アプリ</span>
+      </div>
+    </div>
+    <span id="chapter-badge"></span>
+  </header>
+
+  <!-- ===== プログレスバー ===== -->
+  <div class="progress-area">
+    <div class="progress-text" id="progress-text">章を選んで演習を開始してください</div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- ===== チャットエリア ===== -->
+  <main class="chat-area" id="chat-container">
+    <!-- メッセージがここに動的追加される -->
+  </main>
+
+  <!-- ===== 入力エリア ===== -->
+  <footer class="input-area">
+    <input
+      type="text"
+      id="user-input"
+      placeholder="章番号（例：第1章）または回答（A/B/C/D）を入力..."
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="false"
+    >
+    <button id="send-button" aria-label="送信">
+      &#9658;
+    </button>
+  </footer>
+
+  <!-- ===== 問題データ ===== -->
+  <script src="js/questions_ch1.js"></script>
+  <script src="js/questions_ch2.js"></script>
+  <script src="js/questions_ch3.js"></script>
+  <script src="js/questions_ch4.js"></script>
+  <script src="js/questions_ch5.js"></script>
+
+  <!-- ===== アプリ本体 ===== -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
